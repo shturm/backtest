@@ -1,0 +1,35 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "/usr/include"
+		},
+		{
+			"path": "/home/alx/src/c-snippets/03.1-files-io"
+		},
+		{
+			"path": "/home/alx/src/c-snippets"
+		}
+	],
+	"settings": {
+	     "sublimegdb_workingdir": "${folder:${file}}",
+         "sublimegdb_commandline": "gdb --interpreter=mi ./${file}",
+         "sublimegdb_executables":
+         {
+             "first_executable_name":
+             {
+                 // "workingdir": "${folder:${project_path:first_executable_name}}",
+                 "workingdir": "${folder:${project_path:example-strategy.out}}",
+                 "commandline": "gdb --interpreter=mi ./example-strategy.out"
+             },
+             "second_executable_name":
+             {
+                 "workingdir": "${folder:${project_path:example-strategy-empty.out}}",
+                 "commandline": "gdb --interpreter=mi ./example-strategy-empty.out"
+             }
+         }
+	}
+}

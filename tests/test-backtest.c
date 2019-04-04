@@ -29,11 +29,11 @@ void test_bt_read_history() {
 	BT_OPTIONS* options = (BT_OPTIONS*)malloc(sizeof(BT_OPTIONS));
 	options->batch_periods_count = batch_count;
 	
-	assert(5 == bt_read_history(buffer, options)); // 5
-	assert(5 == bt_read_history(buffer, options)); // 5
-	assert(5 == bt_read_history(buffer, options)); // 5
-	assert(3 == bt_read_history(buffer, options)); // 3
-	assert(0 == bt_read_history(buffer, options)); // 0
+	assert(5 == bt_read_history(buffer, options)); // 5 lines
+	assert(5 == bt_read_history(buffer, options)); // 5 lines
+	assert(5 == bt_read_history(buffer, options)); // 5 lines
+	assert(3 == bt_read_history(buffer, options)); // 3 lines
+	assert(0 == bt_read_history(buffer, options)); // 0 lines
 
 	// free(candles);
 	free(options);

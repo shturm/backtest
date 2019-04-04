@@ -19,11 +19,12 @@ TESTOBJSBUILT=$(wildcard tests/*.o)
 all: libbacktest.a backtest tests example-strategy-empty example-strategy
 
 backtest:
-	$(CC) backtest-exec.c backtest.c -L"./" -lbacktest -o backtest
+	$(CC) backtest-exec.c backtest.c history.c -L"./" -lbacktest -o backtest
 
 libbacktest.a:
 	$(CC) -c $(CCFLAGS) backtest.c $(CCLINK) -o backtest.o
-	$(AR) rcu $@ backtest.o
+	$(CC) -c $(CCFLAGS) history.c $(CCLINK) -o history.o
+	$(AR) rcu $@ backtest.o history.o
 	$(RANLIB) $@
 
 tests: libbacktest.a $(TESTOBJS)

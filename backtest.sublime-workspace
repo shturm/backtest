@@ -1,0 +1,1457 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"th",
+				"thedate"
+			],
+			[
+				"target",
+				"target_dir"
+			],
+			[
+				"tar",
+				"target_dir"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"tstca",
+				"testcase_count"
+			],
+			[
+				"testcase",
+				"testcase_count"
+			],
+			[
+				"targ",
+				"target_dirpath"
+			],
+			[
+				"lineti",
+				"line_time_conv"
+			],
+			[
+				"lineclo",
+				"line_close_conv"
+			],
+			[
+				"linehi",
+				"line_high"
+			],
+			[
+				"linetime",
+				"line_time_conv"
+			],
+			[
+				"li",
+				"line_close"
+			],
+			[
+				"strto",
+				"strtok_res"
+			],
+			[
+				"histor",
+				"history_filepath_csv"
+			],
+			[
+				"histo",
+				"history_filepath"
+			],
+			[
+				"hiso",
+				"history_filepath"
+			],
+			[
+				"his",
+				"history_filepath"
+			],
+			[
+				"dpkg-l",
+				"dpkg-l-old"
+			],
+			[
+				"install",
+				"install-tmp"
+			],
+			[
+				"TESTOBJ",
+				"TESTOBJS"
+			],
+			[
+				"std",
+				"stdlib.h\tstandard header"
+			],
+			[
+				"btwa",
+				"BT_WALLET"
+			],
+			[
+				"bt_",
+				"BT_OPTIONS"
+			],
+			[
+				"l",
+				"lbacktest"
+			],
+			[
+				"BT",
+				"BT_OPTIONS"
+			],
+			[
+				"T",
+				"TESTSRCS"
+			],
+			[
+				"constr",
+				"__construct"
+			],
+			[
+				"start",
+				"startFormatted"
+			],
+			[
+				"star",
+				"startFormatted"
+			],
+			[
+				"for",
+				"form-control"
+			],
+			[
+				"user",
+				"user_display_name"
+			],
+			[
+				"cell",
+				"cellgroups"
+			],
+			[
+				"prison",
+				"PrisonerGroups"
+			],
+			[
+				"reli",
+				"religion_settings"
+			],
+			[
+				"re",
+				"religion_element"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 1231,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alx/src/c-snippets/07-time/main.c",
+			"settings":
+			{
+				"buffer_size": 448,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alx/src/c-snippets/10-sscanf/main.c",
+			"settings":
+			{
+				"buffer_size": 769,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alx/src/angello/README.md",
+			"settings":
+			{
+				"buffer_size": 4377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alx/src/c-snippets/10-sscanf/Makefile",
+			"settings":
+			{
+				"buffer_size": 16,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/data/history.tohlc.csv",
+			"settings":
+			{
+				"buffer_size": 476,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/test-backtest.c",
+			"settings":
+			{
+				"buffer_size": 1843,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "histdata/DAT_ASCII_EURUSD_M1_2018.csv",
+			"settings":
+			{
+				"buffer_size": 20120778,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backtest.c",
+			"settings":
+			{
+				"buffer_size": 2648,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backtest.sublime-project",
+			"settings":
+			{
+				"buffer_size": 938,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alx/src/c-snippets/03.1-files-io/filesio.c",
+			"settings":
+			{
+				"buffer_size": 1613,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/include/regex.h",
+			"settings":
+			{
+				"buffer_size": 22049,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backtest.h",
+			"settings":
+			{
+				"buffer_size": 1607,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gdb",
+				"SublimeGDB: Start Debugging"
+			],
+			[
+				"ss c",
+				"Set Syntax: C"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
+			[
+				"upperca",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ssbash",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"",
+				"Build With: Make"
+			],
+			[
+				"ssyntaxc",
+				"Set Syntax: C"
+			],
+			[
+				"UPPER",
+				"Convert Case: Upper Case"
+			],
+			[
+				"UP\t",
+				"Convert Case: Upper Case"
+			],
+			[
+				"sc",
+				"Set Syntax: C"
+			],
+			[
+				"refresh",
+				"Project: Refresh Folders"
+			],
+			[
+				"ssmarkdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ssconf",
+				"Set Syntax: Git Config"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"refres",
+				"Project: Refresh Folders"
+			],
+			[
+				"ssphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"ssp",
+				"Set Syntax: PHP"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"PHP",
+				"Set Syntax: PHP"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"bookmar",
+				"Bookmarks: Toggle"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/alx/src/backtest",
+		"/home/alx/src/backtest/examples"
+	],
+	"file_history":
+	[
+		"/home/alx/src/js/bowerapp/bower_components/angular/angular.js",
+		"/home/alx/mailprint/Agradecidos.eml",
+		"/home/alx/Downloads/vim-monokai-master/README.md",
+		"/usr/include/stdio.h",
+		"/home/alx/src/backtest/examples/example-strategy.c",
+		"/home/alx/src/backtest/examples/example-strategy-empty.c",
+		"/home/alx/src/backtest/tests/data/history.tohlc.csv.bth",
+		"/usr/include/stdlib.h",
+		"/home/alx/src/c-snippets/03.1-files-io/Makefile",
+		"/home/alx/src/c-snippets/03.1-files-io/my_numbers.dat",
+		"/home/alx/src/c-snippets/04-arrays/Makefile",
+		"/home/alx/src/backtest/backtest.c",
+		"/usr/include/i386-linux-gnu/bits/stdio.h",
+		"/home/alx/Documents/espanol/espanol.dict.txt",
+		"/home/alx/src/js/bowerapp/bower_components/d3/README.md",
+		"/home/alx/src/js/bowerapp/bower_components/knockout/README.md",
+		"/home/alx/src/Mozart-master/mozart.js",
+		"/home/alx/Music/total-invasion/27.03.2019/readme.txt",
+		"/home/alx/Music/radio/zrock/total-invasion-2019.03.27/readme.txt",
+		"/media/alx/22CD-D1C1/desktop.ini",
+		"/home/alx/Downloads/20190220/download.sh",
+		"/home/alx/Downloads/ws-client.sh",
+		"/home/alx/Downloads/README.md",
+		"/home/alx/src/dopewars-1.5.12/README",
+		"/home/alx/src/websocketd/libwebsocketd/config.go",
+		"/home/alx/a text editor that is upwards compatible to Vi. It can be used to edit all kinds of plain text. It is especially useful for editing programs.",
+		"/home/alx/above Vi: multi level undo, multi windows and buffers, syntax highlighting, command line editing, filename completion, on-line help, visual selection, etc.. See :help vi_diff.txt for a sum‐",
+		"/home/alx/Documents/espanol.dict.txt",
+		"/home/alx/Downloads/20190217/20190217.sh",
+		"/home/alx/Downloads/20190210/20190210.sh",
+		"/home/alx/Downloads/20190210/www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php",
+		"/home/alx/Documents/espanol/dicts/englishspanishdictionary.txt",
+		"/home/alx/Documents/espanol/noticcias-raduccionas.txt",
+		"/home/alx/Documents/device/find-all.txt",
+		"/home/alx/src/angello/package.json",
+		"/home/alx/Downloads/Шепот от отвъдното.eml",
+		"/home/alx/Documents/writing/mat/build.sh",
+		"/home/alx/Documents/writing/arq/arq.md",
+		"/home/alx/src/publikator/entity/article.js",
+		"/home/alx/src/check-1.sh",
+		"/home/alx/src/pg/demo.c",
+		"/home/alx/src/wgetpager.sh",
+		"/home/alx/Downloads/1.ps",
+		"/home/alx/Videos/Daddys.Home.2.2017.576p.BRRip.x265-DiN/~uTorrentPartFile_43F9C461.dat",
+		"/home/alx/Videos/ltv-filmi/Oldboy.2013.BRRip.x264.AAC-HUD/Oldboy.2013.BRRip.x264.AAC-HUD.srt",
+		"/media/alx/WDATA/Videos/Papillon.2018/Papillon.2018.REAL.DVDRip.XviD.AC3-EVO.srt",
+		"/home/alx/Downloads/04 - ESPANA - Валенсия, Сервантес, история/01 - ИСПАНИЯ-помагало.ком - История и География/10 - Испанска история.txt",
+		"/home/alx/src/rust-hello/hellorust/Cargo.toml",
+		"/home/alx/Videos/ltv-filmi/The.Firm.DVDRip.XviD-Rets/The.Firm.DVDRip.Xvid-Rets.srt",
+		"/home/alx/src/eigen-eigen-b9073cad7f04/README.md",
+		"/home/alx/src/histdata/curl-histdata-template.sh",
+		"/usr/include/string.h",
+		"/usr/include/openblas/openblas_config.h",
+		"/home/alx/src/corruptor/unittest.c",
+		"/home/alx/src/corruptor/target/nested/20190101-2.mp3",
+		"/home/alx/src/dl-pages/ti-links.txt",
+		"/home/alx/src/dl-pages-tulipindicators.sh",
+		"/home/alx/Documents/epanol/cancionas/bebe-adios.txt",
+		"/home/alx/Documents/epanol/cancionas/bebe-perdida.txt",
+		"/tmp/xa-ZgrN9k/DAT_ASCII_EURUSD_M1_201812.txt",
+		"/home/alx/src/backtest/backtest.h",
+		"/home/alx/Downloads/ltv/Документи/нова заявка.docx.id-4055570311_bingo@opensourcemail.org",
+		"/home/alx/Videos/ltv-filmi/The.12th.Man.2017.576p.BRRip.x265-DiN/Den 12. mann  2017 1080p.BDRip.srt",
+		"/home/alx/Downloads/tulipindicators/Tulip Indicators Open-Source Technical Analysis Indicator Library - Tulip Indicators.html",
+		"/home/alx/src/dl-pages/ti-download.sh",
+		"/home/alx/src/corruptor/ctr.c",
+		"/home/alx/Documents/histdata/download-links.txt",
+		"/home/alx/src/wgetpage.sh",
+		"/var/www/html/index.nginx-debian.html",
+		"/home/alx/src/Blessing_3_v3.9.6.09.ex4",
+		"/home/alx/src/corruptor/ctr",
+		"/home/alx/Videos/ltv-filmi/curl-histdata.sh",
+		"/home/alx/Downloads/histdata/DAT_ASCII_EURUSD_M1_201803.txt",
+		"/home/alx/Downloads/histdata/DAT_ASCII_EURUSD_M1_201803.csv",
+		"/home/alx/Downloads/histdata/download-links.txt",
+		"/home/alx/src/corruptor/winmain.cpp",
+		"/home/alx/src/corruptor/ctr.xlsx",
+		"/home/alx/src/corruptor/ctr.h",
+		"/home/alx/src/corruptor/Makefile",
+		"/usr/include/fnmatch.h",
+		"/usr/include/dirent.h",
+		"/home/alx/src/corruptor/target/nested/bebe_-_Siempre_Me_Quedara_Cocain.mp3",
+		"/home/alx/src/corruptor/target/nested/Bebe -  Malo.mp3",
+		"/usr/include/regex.h",
+		"/home/alx/src/dosiero2/html-admin-template-master/vendors/echarts/dist/echarts.common.js",
+		"/usr/include/assert.h",
+		"/home/alx/src/c-examples/09-strings/main.c",
+		"/usr/include/i386-linux-gnu/bits/dirent.h",
+		"/home/alx/src/corruptor/ctr_exec.c",
+		"/usr/include/linux/stddef.h",
+		"/home/alx/src/corruptor/unittest",
+		"/usr/include/fcgi_stdio.h",
+		"/home/alx/src/backtest/tests/test-backtest.out",
+		"/home/alx/src/backtest/README.md",
+		"/home/alx/src/ogl-samples/external/glfw-3.1.1/README.md",
+		"/home/alx/src/ogl-samples/external/glfw-3.1.1/include/GLFW/glfw3.h",
+		"/home/alx/src/ziparticles.sh",
+		"/home/alx/src/ziparticle.sh",
+		"/home/alx/src/backtest/tests/test-backtest.c",
+		"/home/alx/src/c-examples/03-binary-files/main.c",
+		"/media/alx/WDATA/py.py",
+		"/home/alx/src/ogl-samples/external/FreeImage-3.15.4/FreeImage.h",
+		"/home/alx/src/ogl-samples/external/gli/gli.hpp",
+		"/usr/include/stdint.h",
+		"/home/alx/src/ogl-samples/external/glfw-3.1.1/examples/simple.c",
+		"/home/alx/src/cms/vendor/josegonzalez/dotenv/src/josegonzalez/Dotenv/Loader.php",
+		"/home/alx/src/c-examples/07-time/main.c",
+		"/usr/include/time.h",
+		"/home/alx/src/backtest/tests/data/history.tohlc.csv",
+		"/home/alx/src/backtest/run-tests.sh",
+		"/home/alx/src/bigdl/Makefile",
+		"/home/alx/src/dosiero2/html-admin-template-master/documentation/css/shCoreDefault.css",
+		"/home/alx/src/c-examples/09-strings/Makefile",
+		"/home/alx/src/c-examples/08-fgets/Makefile",
+		"/home/alx/src/c-examples/08-fgets/main.c",
+		"/home/alx/src/backtest/tests/history.tohlc.csv",
+		"/home/alx/src/backtest/Makefile",
+		"/home/alx/src/c-examples/08-fgets/file.txt",
+		"/home/alx/src/bigdl/produce-3-install-deb.sh",
+		"/home/alx/src/bigdl/produce-1-install-deb.sh",
+		"/home/alx/Documents/бялото злато.md",
+		"/home/alx/Documents/stani-todo",
+		"/home/alx/src/bigdl/scripts/1-install-deb.sh",
+		"/home/alx/src/bigdl/scripts/2-install-whl.sh",
+		"/home/alx/src/bigdl/scripts/3-install-deb.sh",
+		"/home/alx/.theanorc",
+		"/home/alx/src/ai/download_keras_datasets.py",
+		"/home/alx/src/keras/examples/mnist_cnn.py"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+			"/home/alx/Documents/rust/doc.rust-lang.org/book"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"your_executable_name",
+			"(int)(",
+			"%d",
+			"asprintf",
+			"swarm:",
+			"gradual",
+			"gradualmente:",
+			"ciencia:",
+			"nombrado:",
+			"holgazan",
+			"corrupto:",
+			"sentimiento:",
+			"sustado:",
+			"qualun",
+			"clerical",
+			"l.icidad",
+			"l.?icidad",
+			"icidad",
+			"proteger:",
+			"killer:",
+			"matar:",
+			"honrar:",
+			"sublime:",
+			"pretender:",
+			"anunciar",
+			"bandera",
+			"divertir:",
+			"repugn",
+			"repugnar:",
+			"arrv",
+			"arriva",
+			"arr",
+			"tremendo:",
+			"descubrimi",
+			"disolver",
+			"disvolver",
+			"disolver",
+			"sucesiv",
+			"sucesivamente",
+			"irre",
+			"dentista",
+			"dentista:",
+			"arrancar:",
+			"cesión:",
+			"cesión",
+			"devolu",
+			"devoluc",
+			"devolución",
+			"referir:",
+			"inolvidable",
+			"obvious",
+			"adoptar",
+			"resurg",
+			"nause",
+			"meter:",
+			"variedade",
+			"cor:",
+			"^velin",
+			"veline",
+			"velin",
+			"toque de queda",
+			"brazo:",
+			"antaño",
+			"reabrir:",
+			"conmovedor",
+			"filoborb",
+			"surgimient",
+			"resurgimie",
+			"aparic",
+			"anden",
+			"medir:",
+			"medar:",
+			"matar:",
+			"campesino",
+			"esplendor:",
+			"casta",
+			"capo",
+			"capo:",
+			"breve:",
+			"ladron",
+			"reapar",
+			"disminuyen",
+			"apagar:",
+			"limitar:",
+			"ahorrar:",
+			"sino:",
+			"aceras:",
+			"oriental:",
+			"^prou",
+			"prou",
+			"prosti",
+			"estremecimiento",
+			"alcalde:",
+			"gana:",
+			"embeber",
+			"magdalena:",
+			"fear:",
+			"alrededor",
+			"invader:",
+			"amenazar",
+			"ganchudo",
+			"muro:",
+			"haya:",
+			"íntegr",
+			"sabañón",
+			"cama:",
+			"sawdust:",
+			"alimentación",
+			"delante",
+			"militarizar:",
+			"circular:",
+			"acuartelar",
+			"confine:",
+			"toque:",
+			"especie:",
+			"mano:",
+			"espasmo",
+			"faro:",
+			"accion",
+			"acción",
+			"dinamo",
+			"sino:",
+			"pilas",
+			"extraña",
+			"armar:",
+			"empapar",
+			"plaster",
+			"plaster:"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								985,
+								985
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/alx/src/c-snippets/07-time/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/alx/src/c-snippets/10-sscanf/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								768,
+								768
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/alx/src/angello/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								493,
+								493
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/alx/src/c-snippets/10-sscanf/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "tests/data/history.tohlc.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								476,
+								476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "tests/test-backtest.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								898,
+								898
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "histdata/DAT_ASCII_EURUSD_M1_2018.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20120778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								293868,
+								293868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 103055.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "backtest.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "backtest.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/alx/src/c-snippets/03.1-files-io/filesio.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								507,
+								507
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/usr/include/regex.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16570,
+								16570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7448.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "backtest.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1151,
+								1151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 143.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 167.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "backtest.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"stdio",
+				"include/stdio.h"
+			],
+			[
+				"stdlib",
+				"include/stdlib.h"
+			],
+			[
+				"regex",
+				"include/regex.h"
+			],
+			[
+				"libstd",
+				"include/i386-linux-gnu/bits/stdio.h"
+			],
+			[
+				"",
+				"~/src/wgetpager.sh"
+			],
+			[
+				"openbl",
+				"include/openblas/openblas_config.h"
+			],
+			[
+				"wgetpa",
+				"src/wgetpage.sh"
+			],
+			[
+				"wget",
+				"src/wgetpage.sh"
+			],
+			[
+				"includestdio",
+				"include/stdio.h"
+			],
+			[
+				"includestring",
+				"include/string.h"
+			],
+			[
+				"string",
+				"include/string.h"
+			],
+			[
+				"stringh",
+				"include/string.h"
+			],
+			[
+				"fnmatch",
+				"include/fnmatch.h"
+			],
+			[
+				"includerege",
+				"include/regex.h"
+			],
+			[
+				"strh",
+				"include/string.h"
+			],
+			[
+				"dirent",
+				"include/dirent.h"
+			],
+			[
+				"includedirent",
+				"include/dirent.h"
+			],
+			[
+				"stddef",
+				"include/linux/stddef.h"
+			],
+			[
+				"stdli",
+				"include/stdlib.h"
+			],
+			[
+				"includeregex",
+				"include/regex.h"
+			],
+			[
+				"asserth",
+				"include/assert.h"
+			],
+			[
+				"std",
+				"include/stdlib.h"
+			],
+			[
+				"includestdioh",
+				"include/stdio.h"
+			],
+			[
+				"includeglfw",
+				"src/ogl-samples/external/glfw-3.1.1/include/GLFW/glfw3.h"
+			],
+			[
+				"includetimeh",
+				"include/time.h"
+			],
+			[
+				"include/stdlib",
+				"include/stdlib.h"
+			],
+			[
+				"include/stddef",
+				"include/linux/stddef.h"
+			],
+			[
+				"include/asse",
+				"include/assert.h"
+			],
+			[
+				"includeassert",
+				"include/assert.h"
+			],
+			[
+				"glut",
+				"include/GL/glut.h"
+			],
+			[
+				"string.h",
+				"include/string.h"
+			],
+			[
+				"curses.",
+				"include/curses.h"
+			],
+			[
+				"backtest/vendor/tisma",
+				"src/backtest/vendor/tulipindicators/indicators/sma.c"
+			],
+			[
+				"assert.h",
+				"include/assert.h"
+			],
+			[
+				"ncurse",
+				"include/python2.7/py_curses.h"
+			],
+			[
+				"main2",
+				"src/cpp-web-fcgi/main_v2.cpp"
+			],
+			[
+				"mysql.",
+				"include/mysql/mysql.h"
+			],
+			[
+				"dosieroform",
+				"src/View/Helper/DosieroFormHelper.php"
+			],
+			[
+				"formhelp",
+				"vendor/cakephp/cakephp/src/View/Helper/FormHelper.php"
+			],
+			[
+				"htmlhe",
+				"vendor/cakephp/cakephp/src/View/Helper/HtmlHelper.php"
+			],
+			[
+				"htmlhelp",
+				"vendor/cakephp/cakephp/src/View/Helper/HtmlHelper.php"
+			],
+			[
+				"formhelper",
+				"vendor/cakephp/cakephp/src/View/Helper/FormHelper.php"
+			],
+			[
+				"paginator",
+				"vendor/cakephp/cakephp/src/Datasource/Paginator.php"
+			],
+			[
+				"table",
+				"bin/sql/tables.sql"
+			],
+			[
+				"prisoneradd",
+				"src/Template/Prisoners/add.ctp"
+			],
+			[
+				"Template/Layout/default.ct",
+				"src/Template/Layout/default.ctp"
+			],
+			[
+				"vendorbaketemplateinde",
+				"vendor/wyrihaximus/twig-view/src/Template/Bake/Template/index.ctp"
+			],
+			[
+				"cake\\table",
+				"vendor/cakephp/migrations/src/Table.php"
+			],
+			[
+				"cake\\query",
+				"vendor/cakephp/cakephp/src/Database/Query.php"
+			],
+			[
+				"sentencecal",
+				"tests/TestCase/Controller/Component/SentenceCalculatorComponentTest.php"
+			],
+			[
+				"caketestcase",
+				"vendor/cakephp/cakephp/src/TestSuite/TestCase.php"
+			],
+			[
+				"TagsControllerTest",
+				"tests/TestCase/Controller/TagsControllerTest.php"
+			],
+			[
+				"isdvrcontr",
+				"tests/TestCase/Controller/IsdvrControllerTest.php"
+			],
+			[
+				"applica",
+				"src/Application.php"
+			],
+			[
+				"phpunitali",
+				"vendor/cakephp/cakephp/tests/phpunit_aliases.php"
+			],
+			[
+				"autolo",
+				"vendor/autoload.php"
+			],
+			[
+				"TODO",
+				"todo.txt"
+			],
+			[
+				"todo",
+				"todo.txt"
+			],
+			[
+				"layoutdefa",
+				"src/Template/Layout/default.ctp"
+			],
+			[
+				"custom",
+				"html-admin-template-master/build/js/custom.js"
+			],
+			[
+				"flasherror",
+				"src/Template/Element/Flash/error.ctp"
+			],
+			[
+				"prisonerindex",
+				"src/Template/Prisoners/index.ctp"
+			],
+			[
+				"isdvr",
+				"src/Template/Prisoners/isdvrobzor.ctp"
+			],
+			[
+				"htmladminindexhtml",
+				"html-admin-template-master/documentation/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

@@ -19,7 +19,8 @@ BT_OPTIONS* bt_create_options(char const * cli_args[], int cli_args_count) {
 }
 
 void _bt_csv_to_bth(const BT_OPTIONS* o)
-{
+{	
+	// ensure no files are left over
 	if (o->history_file) fclose(o->history_file);
 	FILE* bth_tmp = fopen(o->history_filepath,"r");
 	if (bth_tmp) {
@@ -51,7 +52,8 @@ void _bt_csv_to_bth(const BT_OPTIONS* o)
 		line_low   = strtok(NULL, delim);
 		line_close = strtok(NULL, delim);
 
-		candle->time        = strtol(line_time, NULL, 0);
+		//candle->time        = strtol(line_time, NULL, 0);
+		//candle->time        = ;
 		candle->price_open  = strtod(line_open, NULL);
 		candle->price_high  = strtod(line_high, NULL);
 		candle->price_low   = strtod(line_low, NULL);

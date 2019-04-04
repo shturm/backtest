@@ -1,8 +1,11 @@
+#ifndef H_BACKTEST
+#define H_BACKTEST
+
 #include <stdio.h>
+#include <time.h>
 
 #define DEBUGLINE printf("%s:%s():%d\n", __FILE__, __FUNCTION__, __LINE__);
 
-typedef int BT_CANDLE_STATE;
 
 typedef struct {
 	char*  name;
@@ -19,7 +22,7 @@ typedef struct
 
 typedef struct
 {
-	long int time;
+	struct tm time;
 	double price_open;
 	double price_high;
 	double price_low;
@@ -30,6 +33,7 @@ typedef struct
 	// when started, the actual current price
 	// double price_current; 
 } BT_CANDLE;
+typedef int BT_CANDLE_STATE;
 #define BT_CANDLE_STATE_UNKNOWN 0
 #define BT_CANDLE_STATE_NOTSTARTED 1
 #define BT_CANDLE_STATE_STARTED 2
@@ -72,3 +76,5 @@ void bt_init(BT_OPTIONS* options);
 	buffered reading of binary history file
 */
 int  bt_read_history(double buffer[], const BT_OPTIONS* options);
+
+#endif

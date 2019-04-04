@@ -15,5 +15,7 @@ int main(int argc, char const *argv[])
 	}
 
 	// bt_output(wallet, options); // output trades, according ot options
+
+	printf("%s\n", "[ok] example strategy can process history");
 	return 0;
 }
