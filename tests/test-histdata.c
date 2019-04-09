@@ -8,16 +8,24 @@
 
 int main(int argc, char const *argv[])
 {
-	const char*	line   = "20180101 170000;1.234567;1.345678;1.456789;1.567891;0";
+	const char*	line   = "20181231 171259;1.234567;1.345678;1.456789;1.567891;0";
 	BT_CANDLE*  result = bt_parse_line_histdata(line);
 
-	struct tm* expected_time = (struct tm*)malloc(sizeof(struct tm));
+	BT_DATETIME* expected = (BT_DATETIME*)malloc(sizeof(BT_DATETIME));
+	expected->year = 2018;
+	expected->month = 12;
+	expected->day = 31;
+	expected->hour = 17;
+	expected->minute = 12;
+	expected->second = 59;
+	
+	BT_DATETIME* actual   = &result->datetime;
 
-	assert(memcmp(expected_time, &result->time, sizeof(struct tm)) == 0); 
-	assert(result->price_open  == 1.234567);
-	assert(result->price_high  == 1.345678);
-	assert(result->price_low   == 1.456789);
-	assert(result->price_close == 1.567891);
+	assert(memcmp(expected, actual, sizeof(BT_DATETIME)) == 0); 
+	assert(result->price_open  == 1.234567f);
+	assert(result->price_high  == 1.345678f);
+	assert(result->price_close == 1.567891f);
+	assert(result->price_low   == 1.456789f);
 
 	return 0;
 }

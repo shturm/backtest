@@ -8,12 +8,13 @@ BT_CANDLE* bt_parse_line_histdata(const char* line)
 {
 	BT_CANDLE* result = (BT_CANDLE*)malloc(sizeof(BT_CANDLE));
 
-	// "20181125 114800;1.203630;1.203770;1.203630;1.203720;0";
-	// yyyymmdd hhMMss
-	
-	unsigned int thedate,thetime, y,m,d, h,M,s;	
+	// 20181231 171259;1.234567;1.345678;1.456789;1.567891;0
+	unsigned int thedate,thetime, y,m,d, h,M,s;
+	result->price_open=result->price_high=result->price_low=result->price_close=0.0f;
+	float open,high,low,close;
+	open = high = low = close = 0;
 
-	sscanf(line, "%u %u;%f;%f;%f;%f;0", &thedate, &thetime, &(result->price_open), &(result->price_high), &(result->price_low), &(result->price_close));
+	sscanf(line, "%u %u;%f;%f;%f;%f;0", &thedate, &thetime, &open, &high, &low, &close);
 
 	y=(int)(thedate/10000);
 	m=(int)((thedate%10000)/100);
@@ -23,14 +24,19 @@ BT_CANDLE* bt_parse_line_histdata(const char* line)
 	M=(int)((thetime%10000)/100);
 	s=thetime%100;
 
-	result->time.tm_sec=s;
-	result->time.tm_min=M;
-	result->time.tm_hour=h;
-	// calendar
-	result->time.tm_mday=d;
-	result->time.tm_mon=m-1;
-	result->time.tm_year=y;
-	
+	result->price_open = open;
+	result->price_high = high;
+	result->price_low = low;
+	result->price_close = close;
+
+
+	result->datetime.second=s;
+	result->datetime.minute=M;
+	result->datetime.hour=h;
+	result->datetime.day=d;
+	result->datetime.month=m;
+	result->datetime.year=y;
+
 	return result;
 }
 

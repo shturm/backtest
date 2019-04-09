@@ -20,13 +20,23 @@ typedef struct
 	int     indicator_count;
 } BT_INDICATORS;
 
+typedef struct {
+	unsigned short year:12; // unsigned 12bits=max 4095, values e.g. 2019
+    unsigned short month:4; // unsigned 4bits=max 15, values 1-12
+    unsigned short day:5; // unsigned 5bits=max 31, values 1-31
+
+    unsigned short hour:5; // unsigned 5bits=max 31, values 0-23
+    unsigned short minute:6; // unsigned 6bits=max 63, values 0-59
+    unsigned short second:6; // unsigned 6bits=max 63, values 0-59
+} BT_DATETIME;
+
 typedef struct
 {
-	struct tm time;
-	double price_open;
-	double price_high;
-	double price_low;
-	double price_close;
+	BT_DATETIME datetime;
+	float price_open;
+	float price_high;
+	float price_low;
+	float price_close;
 	
 	// when finished, equal to price_close, 
 	// when not started or unknown, not usable
