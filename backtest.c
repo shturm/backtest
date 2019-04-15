@@ -5,6 +5,7 @@
 #include <time.h>
 
 #include "backtest.h"
+#include "history.h"
 
 BT_WALLET* bt_create_wallet() {
 	BT_WALLET* wallet = (BT_WALLET*)malloc(sizeof(BT_WALLET));
@@ -12,91 +13,101 @@ BT_WALLET* bt_create_wallet() {
 }
 
 BT_OPTIONS* bt_create_options(char const * cli_args[], int cli_args_count) {
-	BT_OPTIONS* popts = (BT_OPTIONS*)malloc(sizeof(BT_OPTIONS));
 	
-	popts->batch_periods_count = 20;
+	BT_OPTIONS* popts = (BT_OPTIONS*)malloc(sizeof(BT_OPTIONS));
+
+	popts->is_initiated = 0;	
+	popts->batch_candles_count = 2000;
+	strcpy(popts->history_filepath_csv, "");
+	strcpy(popts->history_filepath_bth, "");
+
+		if (cli_args != NULL)
+		{
+			// TODO: read args options
+		}
+
 	return popts;
 }
 
-void _bt_csv_to_bth(const BT_OPTIONS* o)
+void _bt_csv_to_bth(const char* filepath_csv, const char* filepath_bth)
 {	
-	// ensure no files are left over
-	if (o->history_file) fclose(o->history_file);
-	FILE* bth_tmp = fopen(o->history_filepath,"r");
-	if (bth_tmp) {
-		fclose(bth_tmp);
-		remove(o->history_filepath);
-	}
-
-	FILE* fcsv = fopen(o->history_filepath_csv, "r");
-	FILE* fbth = fopen(o->history_filepath,     "w");
+	FILE* fcsv = fopen(filepath_csv, "r");
+	FILE* fbth = fopen(filepath_bth, "w");
 	
 	assert(fcsv != NULL);
 	assert(fbth != NULL);
 
-	int MAX_LINE_LENGTH = 256;
+	const int MAX_LINE_LENGTH = 256;
 	char line[MAX_LINE_LENGTH];
-	char* linecp;
-	char* delim = ",";
-	char *line_time, *line_open, *line_high, *line_low, *line_close;
 	
-	long line_time_conv;
-	double line_open_conv, line_high_conv, line_low_conv, line_close_conv;
-	BT_CANDLE* candle = (BT_CANDLE*)malloc(sizeof(BT_CANDLE));
+	BT_CANDLE* candle;
 	while(fgets(line, MAX_LINE_LENGTH, fcsv) !=  NULL)
 	{
-		linecp     = strdup(line);
-		line_time  = strtok(linecp, delim);
-		line_open  = strtok(NULL, delim);
-		line_high  = strtok(NULL, delim);
-		line_low   = strtok(NULL, delim);
-		line_close = strtok(NULL, delim);
-
-		//candle->time        = strtol(line_time, NULL, 0);
-		//candle->time        = ;
-		candle->price_open  = strtod(line_open, NULL);
-		candle->price_high  = strtod(line_high, NULL);
-		candle->price_low   = strtod(line_low, NULL);
-		candle->price_close = strtod(line_close, NULL);
-
+		candle = bt_parse_line_histdata(line); // TODO: paremetrize
 		fwrite(candle, sizeof(BT_CANDLE), 1, fbth);
-
-		free(linecp);
 	}
 	free(candle);
 	fclose(fcsv);
 	fclose(fbth);
 }
 
-void bt_init(BT_OPTIONS* o) {
-	o->history_file_headers_csv   = "TOHLC"; // todo
-	o->history_file_headers_csv_n = 5;       // todo
 
-	if (o->history_filepath_csv_n > 0)
+
+void bt_init(BT_OPTIONS* o) {	
+	if (o->is_initiated == 1) return;
+
+	assert(strlen(o->history_filepath_csv) > 0 ||
+           strlen(o->history_filepath_bth) > 0);
+
+	// bth present
+	if (strlen(o->history_filepath_bth) > 0)
 	{
-		o->history_filepath_n = o->history_filepath_csv_n + sizeof(".bth")-1;
-		o->history_filepath   = (char*)realloc(o->history_filepath, o->history_filepath_n);		
-		strcpy(o->history_filepath, o->history_filepath_csv);
-		strcat(o->history_filepath, ".bth");
+		o->is_initiated = 1;
+		return;
+	}
 
-		o->history_file = fopen (o->history_filepath, "r");
-		if (!o->history_file)
+	// csv present, but not bth
+	if (strlen(o->history_filepath_csv) >  0 &&
+        strlen(o->history_filepath_bth) == 0)
+	{
+		strcpy(o->history_filepath_bth, o->history_filepath_csv);
+		strcat(o->history_filepath_bth, ".bth");
+		
+		o->history_file_bth = fopen (o->history_filepath_bth, "r");
+		if (!o->history_file_bth)
 		{
-			_bt_csv_to_bth(o);
+			_bt_csv_to_bth(o->history_filepath_csv, o->history_filepath_bth);
 		}
 	}
+// TODO ensure bth file corresponds to csv file
+	o->is_initiated = 1;
 }
 
-int bt_read_history(double buffer[], const BT_OPTIONS* options) {
-	if (!options->is_initiated) return -1;
 
-	if (feof(options->history_file))   return 0;
-	if (ferror(options->history_file)) return 0;
+int bt_read_history(BT_CANDLE buffer[], const BT_OPTIONS* options) {
+	if (options->is_initiated != 1)        return -1;
+	if (feof(  options->history_file_bth)) return -2;
+	if (ferror(options->history_file_bth)) return -3;
 
 	int read = fread(buffer, 
-					sizeof(double), 
-				 	options->history_file_batch_read_count, 
-				 	options->history_file);
+					sizeof(BT_CANDLE), 
+				 	options->batch_candles_count,
+				 	options->history_file_bth);
 	
 	return read;
+}
+
+void bt_print_candle(BT_CANDLE* c) {
+	printf("[%d-%02d-%02d %02d:%02d:%02d] %.6f;%.6f;%.6f;%.6f\n", 
+		c->datetime.year,
+		c->datetime.month,
+		c->datetime.day,
+		c->datetime.hour,
+		c->datetime.minute,
+		c->datetime.second,
+		c->price_open,
+		c->price_high,
+		c->price_low,
+		c->price_close
+	);
 }

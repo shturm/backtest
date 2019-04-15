@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+_bt_csv_to_bth	backtest.c	/^void _bt_csv_to_bth(const BT_OPTIONS* o)$/;"	f
+bt_create_options	backtest.c	/^BT_OPTIONS* bt_create_options(char const * cli_args[], int cli_args_count) {$/;"	f
+bt_create_wallet	backtest.c	/^BT_WALLET* bt_create_wallet() {$/;"	f
+bt_init	backtest.c	/^void bt_init(BT_OPTIONS* o) {$/;"	f
+bt_parse_line_histdata	history.c	/^BT_CANDLE* bt_parse_line_histdata(const char* line)$/;"	f
+bt_read_history	backtest.c	/^int bt_read_history(double buffer[], const BT_OPTIONS* options) {$/;"	f
+main	backtest-exec.c	/^int main(int argc, char const *argv[])$/;"	f

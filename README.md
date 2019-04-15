@@ -18,6 +18,9 @@ and install
 make install
 ```
 
+## History file format
+Single line is `yyyymmdd hhMMss;open;high;low;close`
+
 ## Usage
 
 ### Use as library and link statically on build-time (recommended)

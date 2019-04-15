@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <time.h>
+#include <string.h>
 
 long int fpsize(FILE* f)
 {
@@ -23,37 +24,40 @@ long int fpsize(FILE* f)
 }
 
 void test_bt_read_history() {
-	int batch_count = 5;
-	double buffer[batch_count];
-	//candles[0] = (BT_CANDLE*) malloc(sizeof(BT_CANDLE)*batch_count);
-	BT_OPTIONS* options = (BT_OPTIONS*)malloc(sizeof(BT_OPTIONS));
-	options->batch_periods_count = batch_count;
+	printf("test_bt_read_history()\n");
+	const int BATCH_COUNT = 5;
+	BT_CANDLE buffer[BATCH_COUNT];
+	BT_OPTIONS* options = bt_create_options(NULL, 0);
 	
-	assert(5 == bt_read_history(buffer, options)); // 5 lines
-	assert(5 == bt_read_history(buffer, options)); // 5 lines
-	assert(5 == bt_read_history(buffer, options)); // 5 lines
-	assert(3 == bt_read_history(buffer, options)); // 3 lines
+	options->batch_candles_count = BATCH_COUNT;
+
+	strcpy(options->history_filepath_bth, "data/histdata.csv.bth");
+	options->history_file_bth = fopen(options->history_filepath_bth,"r");
+	
+	assert(10 == bt_read_history(buffer, options)); // 10 lines
 	assert(0 == bt_read_history(buffer, options)); // 0 lines
 
-	// free(candles);
 	free(options);
 }
 
 void test_bt_init()
 {
+	printf("test_bt_init()\n");
 	BT_OPTIONS* options = (BT_OPTIONS*)malloc(sizeof(BT_OPTIONS));
-	options->history_filepath_csv   = "data/history.tohlc.csv";
-	options->history_filepath_csv_n = 22;
+	
+	strcpy(options->history_filepath_csv,"data/histdata.csv");
 
 	bt_init(options);
 
-	FILE*  h     = fopen("data/history.tohlc.csv.bth", "r"); // 18 records
+	FILE*  h     = fopen("data/histdata.csv.bth", "r"); // 10 records
 	size_t hsize = fpsize(h);
 
 	printf("size of BT_CANDLE: %d\n", sizeof(BT_CANDLE));
 	printf("size of bth file : %d\n", hsize);
+	printf("file size mod candle size == %d\n", hsize % sizeof(BT_CANDLE));
+	assert(hsize % sizeof(BT_CANDLE) == 0);
 	assert(NULL != h);
-	assert(sizeof(BT_CANDLE)*18  == hsize);
+	assert(sizeof(BT_CANDLE)*10  == hsize); // there are 10 lines in the file
 
 	// remove("data/history.tohlc.csv.bth");
 	free(options);
@@ -63,8 +67,8 @@ void test_bt_init()
 int main(int argc, char const *argv[])
 {
 	
-	// test_bt_read_history();
 	test_bt_init();
+	test_bt_read_history();
 
 	return 0;
 }

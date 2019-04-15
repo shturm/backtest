@@ -8,15 +8,15 @@
 
 
 typedef struct {
-	char*  name;
-	char*  version;
-	char** indicators;
+	char  name;
+	char  version;
+	char indicators[128][32];
 } BT_STRAT_META;
 
 typedef struct
 {
-	char**  indicators;
-	double* indicator_values;
+	char indicators[128][32];
+	double indicator_values;
 	int     indicator_count;
 } BT_INDICATORS;
 
@@ -41,8 +41,11 @@ typedef struct
 	// when finished, equal to price_close, 
 	// when not started or unknown, not usable
 	// when started, the actual current price
-	// double price_current; 
+	// float price_current; 
 } BT_CANDLE;
+
+void bt_print_candle(BT_CANDLE* candle);
+
 typedef int BT_CANDLE_STATE;
 #define BT_CANDLE_STATE_UNKNOWN 0
 #define BT_CANDLE_STATE_NOTSTARTED 1
@@ -58,20 +61,15 @@ typedef struct
 {
 	short is_initiated;
 
-	int batch_periods_count; // deprecated
-	int history_file_batch_read_count;
-	
+	int batch_candles_count; // how many candles are buffered per read
+
 	// csv, to be converted
 	FILE*  history_file_csv;
-	char*  history_filepath_csv;
-	int    history_filepath_csv_n;
-	char*  history_file_headers_csv; // e.g. "TOHLC": (T)ime, (O)pen, (H)igh, (L)ow, (C)lose, (I)nstrument
-	int    history_file_headers_csv_n;
+	char   history_filepath_csv[256];
 
 	// binary, produced by converting from csv
-	FILE*  history_file;
-	char*  history_filepath;
-	int    history_filepath_n;
+	FILE*  history_file_bth;
+	char   history_filepath_bth[256]; // backtest history, proprietary binary format
 } BT_OPTIONS;
 
 BT_WALLET* bt_create_wallet();
@@ -85,6 +83,8 @@ void bt_init(BT_OPTIONS* options);
 /*
 	buffered reading of binary history file
 */
-int  bt_read_history(double buffer[], const BT_OPTIONS* options);
+int  bt_read_history(BT_CANDLE buffer[], const BT_OPTIONS* options);
+
+
 
 #endif

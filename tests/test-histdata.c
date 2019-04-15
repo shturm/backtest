@@ -27,5 +27,8 @@ int main(int argc, char const *argv[])
 	assert(result->price_close == 1.567891f);
 	assert(result->price_low   == 1.456789f);
 
+	printf("open  %3.15f \nhigh  %f \nlow   %.10f \nclose %.10f\n",
+		result->price_open, result->price_high, result->price_low, result->price_close);
+
 	return 0;
 }
